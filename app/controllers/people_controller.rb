@@ -25,7 +25,7 @@ class PeopleController < ApplicationController
 				end
 				f.second.except!(:location)
 			end
-		end
+		end unless person[:facts_attributes].nil?
 		person
 	end
 	
